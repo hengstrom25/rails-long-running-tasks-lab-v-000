@@ -4145,3 +4145,100 @@ Processing by SongsController#index as HTML
   [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 137], ["LIMIT", 1]]
   Rendered songs/index.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+Started POST "/songs/upload" for 127.0.0.1 at 2019-01-05 18:44:52 +0000
+Processing by SongsController#upload as HTML
+  Parameters: {"utf8"=>"✓", "file"=>#<ActionDispatch::Http::UploadedFile:0x00000008054be8 @tempfile=#<Tempfile:/tmp/RackMultipart20190105-14199-142fnvq.csv>, @original_filename="songs.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"songs.csv\"\r\nContent-Type: text/csv\r\nContent-Length: 913\r\n">, "commit"=>"Save changes"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ".38 Special"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", ".38 Special"], ["created_at", "2019-01-05 18:44:52.502674"], ["updated_at", "2019-01-05 18:44:52.502674"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Caught Up in You"], ["created_at", "2019-01-05 18:44:52.504410"], ["updated_at", "2019-01-05 18:44:52.504410"], ["artist_id", 138]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ".38 Special"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Fantasy Girl"], ["created_at", "2019-01-05 18:44:52.506882"], ["updated_at", "2019-01-05 18:44:52.506882"], ["artist_id", 138]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ".38 Special"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Hold On Loosely"], ["created_at", "2019-01-05 18:44:52.529854"], ["updated_at", "2019-01-05 18:44:52.529854"], ["artist_id", 138]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", ".38 Special"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Rockin' Into the Night"], ["created_at", "2019-01-05 18:44:52.532619"], ["updated_at", "2019-01-05 18:44:52.532619"], ["artist_id", 138]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "10cc"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "10cc"], ["created_at", "2019-01-05 18:44:52.535208"], ["updated_at", "2019-01-05 18:44:52.535208"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Art For Arts Sake"], ["created_at", "2019-01-05 18:44:52.536717"], ["updated_at", "2019-01-05 18:44:52.536717"], ["artist_id", 139]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "3 Doors Down"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "3 Doors Down"], ["created_at", "2019-01-05 18:44:52.539073"], ["updated_at", "2019-01-05 18:44:52.539073"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Kryptonite"], ["created_at", "2019-01-05 18:44:52.540538"], ["updated_at", "2019-01-05 18:44:52.540538"], ["artist_id", 140]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "3 Doors Down"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Loser"], ["created_at", "2019-01-05 18:44:52.542973"], ["updated_at", "2019-01-05 18:44:52.542973"], ["artist_id", 140]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "3 Doors Down"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "When I'm Gone"], ["created_at", "2019-01-05 18:44:52.545222"], ["updated_at", "2019-01-05 18:44:52.545222"], ["artist_id", 140]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "4 Non Blondes"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mArtist Create (0.1ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "4 Non Blondes"], ["created_at", "2019-01-05 18:44:52.547459"], ["updated_at", "2019-01-05 18:44:52.547459"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "What's Up?"], ["created_at", "2019-01-05 18:44:52.548949"], ["updated_at", "2019-01-05 18:44:52.548949"], ["artist_id", 141]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "a-ha"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mArtist Create (0.1ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "a-ha"], ["created_at", "2019-01-05 18:44:52.551215"], ["updated_at", "2019-01-05 18:44:52.551215"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Take On Me"], ["created_at", "2019-01-05 18:44:52.552733"], ["updated_at", "2019-01-05 18:44:52.552733"], ["artist_id", 142]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "AC/DC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mArtist Create (0.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "AC/DC"], ["created_at", "2019-01-05 18:44:52.555102"], ["updated_at", "2019-01-05 18:44:52.555102"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Baby, Please Don't Go"], ["created_at", "2019-01-05 18:44:52.556589"], ["updated_at", "2019-01-05 18:44:52.556589"], ["artist_id", 143]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "AC/DC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Back In Black"], ["created_at", "2019-01-05 18:44:52.558862"], ["updated_at", "2019-01-05 18:44:52.558862"], ["artist_id", 143]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT ?[0m  [["name", "AC/DC"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mSong Create (0.2ms)[0m  [1m[32mINSERT INTO "songs" ("title", "created_at", "updated_at", "artist_id") VALUES (?, ?, ?, ?)[0m  [["title", "Big Gun"], ["created_at", "2019-01-05 18:44:52.561266"], ["updated_at", "2019-01-05 18:44:52.561266"], ["artist_id", 143]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/songs
+Completed 302 Found in 63ms (ActiveRecord: 8.3ms)
+Started GET "/songs" for 127.0.0.1 at 2019-01-05 18:44:52 +0000
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/application
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 137], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 138], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 139], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 140], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 141], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 142], ["LIMIT", 1]]
+  [1m[36mArtist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 143], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 143], ["LIMIT", 1]]
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT ?[0m  [["id", 143], ["LIMIT", 1]]
+  Rendered songs/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.8ms)
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."title" = ? LIMIT ?[0m  [["title", "Caught Up in You"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
